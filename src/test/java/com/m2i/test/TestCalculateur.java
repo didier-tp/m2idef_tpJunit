@@ -3,20 +3,25 @@ package com.m2i.test;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.m2i.tp.Calculateur;
 
 public class TestCalculateur {
+	
+	private static Logger logger = LoggerFactory.getLogger(TestCalculateur.class);
+	
 	private static Calculateur calculateur; //à tester
 	
 	public TestCalculateur(){
-		System.out.println("nouvelle instance de TestCalculateur " + this.toString());
+		logger.debug("nouvelle instance de TestCalculateur " + this.toString());
 	}
 	
 	@BeforeClass
 	public static void init(){
 		calculateur = new Calculateur();
-		System.out.println("init() appele");
+		logger.debug("init() appele");
 	}
 	
 	@Test
