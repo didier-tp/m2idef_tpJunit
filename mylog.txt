@@ -1,3 +1,10 @@
 2018-05-29 11:50:56,372 DEBUG main com.m2i.test.TestCalculateur - init() appele
 2018-05-29 11:50:56,372 DEBUG main com.m2i.test.TestCalculateur - nouvelle instance de TestCalculateur com.m2i.test.TestCalculateur@65ae6ba4
 2018-05-29 11:50:56,372 DEBUG main com.m2i.test.TestCalculateur - nouvelle instance de TestCalculateur com.m2i.test.TestCalculateur@5c8da962
+2018-05-29 11:56:02,799 DEBUG main com.m2i.test.TestCalculateur - init() appele
+2018-05-29 11:56:02,799 DEBUG main com.m2i.test.TestCalculateur - nouvelle instance de TestCalculateur com.m2i.test.TestCalculateur@65ae6ba4
+2018-05-29 11:56:02,799 DEBUG main com.m2i.test.TestCalculateur - nouvelle instance de TestCalculateur com.m2i.test.TestCalculateur@5c8da962
+2018-05-29 11:56:23,345 DEBUG main com.m2i.test.TestCalculateur - init() appele
+2018-05-29 11:56:23,345 DEBUG main com.m2i.test.TestCalculateur - nouvelle instance de TestCalculateur com.m2i.test.TestCalculateur@65ae6ba4
+2018-05-29 11:56:23,345 DEBUG main com.m2i.test.TestCalculateur - nouvelle instance de TestCalculateur com.m2i.test.TestCalculateur@5c8da962
+2018-05-29 11:56:23,345 TRACE main com.m2i.tp.Calculateur - tva() appele sur Calculateur avec ht=200.0, taux = 20.0
