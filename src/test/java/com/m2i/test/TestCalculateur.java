@@ -25,6 +25,24 @@ public class TestCalculateur {
 	}
 	
 	@Test
+	public void testDivision(){
+		Assert.assertTrue(calculateur.division(6, 3)==2);
+	}
+	
+	@Test
+	public void testDivisionParZero(){
+		int res = 0;
+		try {
+			res = calculateur.division(6, 0);
+			Assert.fail("exception non remontée");
+		} catch (Exception e) {
+			logger.debug("exception bien remontee suite a division par zero : "
+		    + e.getMessage());
+		}
+		
+	}
+	
+	@Test
 	public void testTva(){
 		Assert.assertEquals(40, calculateur.tva(200.0, 20.0),0.0001);
 	}

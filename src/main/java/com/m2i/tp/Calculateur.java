@@ -14,4 +14,15 @@ public class Calculateur {
 	public 	double ttc(double ht, double tauxTvaEnPct){
 		return ht * (1+ tauxTvaEnPct / 100);
 	}
+	
+	public int division(int a, int b){
+		int res=0;
+		try {
+			res=a/b;
+		} catch (RuntimeException e) {
+			logger.error("erreur division",e);
+			throw e; //ou throw new AutreException(...);
+		}
+		return res;
+	}
 }
