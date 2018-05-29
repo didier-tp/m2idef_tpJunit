@@ -20,7 +20,7 @@ public class TestCalculateur {
 	
 	@Test
 	public void testTtc(){
-		Assert.assertEquals(240, calculateur.tva(200.0, 20.0),0.0001);
+		Assert.assertEquals(240, calculateur.ttc(200.0, 20.0),0.0001);
 	}
 	
 	/*
