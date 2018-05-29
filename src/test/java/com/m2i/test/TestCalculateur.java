@@ -1,16 +1,22 @@
 package com.m2i.test;
 
 import org.junit.Assert;
-import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
+
 import com.m2i.tp.Calculateur;
 
 public class TestCalculateur {
-	private Calculateur calculateur; //à tester
+	private static Calculateur calculateur; //à tester
 	
-	@Before
-	public void init(){
+	public TestCalculateur(){
+		System.out.println("nouvelle instance de TestCalculateur " + this.toString());
+	}
+	
+	@BeforeClass
+	public static void init(){
 		calculateur = new Calculateur();
+		System.out.println("init() appele");
 	}
 	
 	@Test
